@@ -45,4 +45,37 @@
       }
     });
   }
+
+  // Language toggle (EN / ES)
+  const langToggle = document.getElementById("langToggle");
+  if (langToggle) {
+    const STORAGE_KEY = "cv-lang";
+    const textEls = document.querySelectorAll("[data-es]:not([data-i18n-html])");
+    const htmlEls = document.querySelectorAll("[data-es][data-i18n-html]");
+
+    textEls.forEach((el) => { el.dataset.en = el.textContent; });
+    htmlEls.forEach((el) => { el.dataset.enHtml = el.innerHTML; });
+
+    function applyLang(lang) {
+      textEls.forEach((el) => {
+        el.textContent = lang === "es" ? el.dataset.es : el.dataset.en;
+      });
+      htmlEls.forEach((el) => {
+        el.innerHTML = lang === "es" ? el.dataset.es : el.dataset.enHtml;
+      });
+      document.documentElement.lang = lang;
+      langToggle.textContent = lang === "es" ? "EN" : "ES";
+      langToggle.setAttribute("aria-label", lang === "es" ? "Switch to English" : "Cambiar a español");
+      try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    }
+
+    let currentLang = "en";
+    try { currentLang = localStorage.getItem(STORAGE_KEY) || "en"; } catch (e) {}
+    applyLang(currentLang);
+
+    langToggle.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "es" : "en";
+      applyLang(currentLang);
+    });
+  }
 })();

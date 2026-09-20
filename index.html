@@ -18,15 +18,16 @@
   <div class="nav-inner">
     <a href="#top" class="nav-logo"><span class="nav-logo-mark">&lt;/&gt;</span> Wilfredo Salazar</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
+      <li><a href="#about" data-es="Sobre mí">About</a></li>
+      <li><a href="#skills" data-es="Habilidades">Skills</a></li>
+      <li><a href="#projects" data-es="Proyectos">Projects</a></li>
+      <li><a href="#experience" data-es="Experiencia">Experience</a></li>
+      <li><a href="#education" data-es="Educación">Education</a></li>
     </ul>
     <div class="nav-actions">
+      <button id="langToggle" class="btn-lang" type="button" aria-label="Cambiar a español">ES</button>
       <button id="downloadBtn" class="btn-download" type="button">
-        <span>Download CV</span>
+        <span data-es="Descargar CV">Download CV</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       </button>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -42,16 +43,16 @@
   <header class="hero reveal" id="top">
     <div class="container hero-grid">
       <div class="hero-text">
-        <p class="kicker">JUNIOR SOFTWARE DEVELOPER</p>
-        <h1 class="hero-title">Hi, I'm Wilfredo<br>a Full Stack Developer<br>in Training</h1>
-        <p class="hero-lede">
+        <p class="kicker" data-es="DESARROLLADOR DE SOFTWARE JUNIOR">JUNIOR SOFTWARE DEVELOPER</p>
+        <h1 class="hero-title" data-i18n-html data-es="Hola, soy Wilfredo<br>Desarrollador Full Stack<br>en Formación">Hi, I'm Wilfredo<br>a Full Stack Developer<br>in Training</h1>
+        <p class="hero-lede" data-es="Construyo y despliego sitios web reales mientras completo una Maestría en Desarrollo Web Full Stack — actualmente enfocado en JavaScript, React, Python y Django.">
           Building and deploying real websites while completing a Master's in Full Stack Web
           Development — currently focused on JavaScript, React, Python and Django.
         </p>
         <ul class="contact-list">
           <li>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Netherlands
+            <span data-es="Países Bajos">Netherlands</span>
           </li>
           <li>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
@@ -81,7 +82,7 @@
         <img class="hero-photo" src="assets/images/profile-cutout.webp" alt="Portrait of Wilfredo Salazar">
         <div class="hero-card">
           <span class="hero-card-dot"></span>
-          Open to Junior Developer roles
+          <span data-es="Disponible para roles junior">Open to Junior Developer roles</span>
         </div>
       </div>
     </div>
@@ -91,32 +92,32 @@
   <section class="block block-b reveal" id="about">
     <div class="container section">
       <div class="section-label">
-        <span class="eyebrow">/ ABOUT ME</span>
+        <span class="eyebrow" data-es="/ SOBRE MÍ">/ ABOUT ME</span>
       </div>
       <div class="section-body">
-        <h2 class="block-title">Learning to build real software, one project at a time</h2>
-        <p class="profile-text">
+        <h2 class="block-title" data-es="Aprendiendo a construir software real, un proyecto a la vez">Learning to build real software, one project at a time</h2>
+        <p class="profile-text" data-es="Desarrollador de Software Junior en formación, cursando actualmente una Maestría en Desarrollo Web Full Stack en Conquer Blocks. Experiencia práctica construyendo y desplegando sitios web para proyectos reales, incluyendo configuración de dominios, despliegue, SEO y analítica.">
           Junior Software Developer in training, currently pursuing a Master's in Full Stack Web Development at Conquer Blocks. Hands-on experience building and deploying websites for real-world projects, including domain configuration, deployment, SEO and analytics.
         </p>
-        <p class="profile-text">
+        <p class="profile-text" data-es="Actualmente desarrollando habilidades en JavaScript, React, Python, Django, SQL, Git y GitHub, utilizando herramientas de desarrollo asistido por IA como Claude Code para acelerar el desarrollo, resolver problemas e implementar funcionalidades.">
           Currently developing skills in JavaScript, React, Python, Django, SQL, Git and GitHub, while using AI-assisted development tools such as Claude Code to accelerate development, troubleshoot issues and implement features.
         </p>
-        <p class="profile-text">
+        <p class="profile-text" data-es="Motivado por crecer como desarrollador de software y contribuir a proyectos reales mientras continúo aprendiendo y formándome profesionalmente.">
           Motivated to grow as a software developer and contribute to real-world projects while continuing to learn and develop professionally.
         </p>
 
         <div class="about-stats no-print">
           <div class="stat">
             <span class="stat-num">3</span>
-            <span class="stat-label">Selected Projects</span>
+            <span class="stat-label" data-es="Proyectos Seleccionados">Selected Projects</span>
           </div>
           <div class="stat">
             <span class="stat-num">8</span>
-            <span class="stat-label">Core Technologies</span>
+            <span class="stat-label" data-es="Tecnologías Principales">Core Technologies</span>
           </div>
           <div class="stat">
             <span class="stat-num">2026</span>
-            <span class="stat-label">Training Since</span>
+            <span class="stat-label" data-es="Formación Desde">Training Since</span>
           </div>
         </div>
       </div>
@@ -127,7 +128,7 @@
   <section class="block reveal" id="skills">
     <div class="container section">
       <div class="section-label">
-        <span class="eyebrow">/ TECHNICAL SKILLS</span>
+        <span class="eyebrow" data-es="/ HABILIDADES TÉCNICAS">/ TECHNICAL SKILLS</span>
       </div>
       <div class="section-body">
         <div class="skills-grid">
@@ -148,13 +149,13 @@
             </div>
           </div>
           <div class="skill-group">
-            <h3>Database</h3>
+            <h3 data-es="Base de Datos">Database</h3>
             <div class="tag-row">
               <span class="tag">SQL</span>
             </div>
           </div>
           <div class="skill-group">
-            <h3>Tools</h3>
+            <h3 data-es="Herramientas">Tools</h3>
             <div class="tag-row">
               <span class="tag">Git</span>
               <span class="tag">GitHub</span>
@@ -163,12 +164,12 @@
             </div>
           </div>
           <div class="skill-group">
-            <h3>Other</h3>
+            <h3 data-es="Otros">Other</h3>
             <div class="tag-row">
-              <span class="tag">Web Deployment</span>
+              <span class="tag" data-es="Despliegue Web">Web Deployment</span>
               <span class="tag">SEO</span>
-              <span class="tag">Responsive Web Design</span>
-              <span class="tag">AI-Assisted Development</span>
+              <span class="tag" data-es="Diseño Web Responsivo">Responsive Web Design</span>
+              <span class="tag" data-es="Desarrollo Asistido por IA">AI-Assisted Development</span>
             </div>
           </div>
         </div>
@@ -180,7 +181,7 @@
   <section class="block block-b reveal" id="projects">
     <div class="container section">
       <div class="section-label">
-        <span class="eyebrow">/ SELECTED PROJECTS</span>
+        <span class="eyebrow" data-es="/ PROYECTOS SELECCIONADOS">/ SELECTED PROJECTS</span>
       </div>
       <div class="section-body">
 
@@ -188,21 +189,21 @@
           <div class="entry-head">
             <div>
               <h3 class="entry-title">Refrigeración WAS</h3>
-              <p class="entry-subtitle">Web Development &amp; Digital Project</p>
+              <p class="entry-subtitle" data-es="Desarrollo Web y Proyecto Digital">Web Development &amp; Digital Project</p>
             </div>
-            <span class="entry-date">2026&ndash;Present</span>
+            <span class="entry-date" data-es="2026&ndash;Presente">2026&ndash;Present</span>
           </div>
-          <p class="entry-desc">Developed and deployed a website for a real home-service refrigeration business.</p>
+          <p class="entry-desc" data-es="Desarrollé y desplegué un sitio web para un negocio real de refrigeración a domicilio.">Developed and deployed a website for a real home-service refrigeration business.</p>
           <ul class="entry-list">
-            <li>Custom domain configuration</li>
-            <li>GitHub Pages deployment</li>
-            <li>SEO implementation</li>
-            <li>Web analytics</li>
-            <li>Digital presence</li>
-            <li>AI-assisted development</li>
+            <li data-es="Configuración de dominio personalizado">Custom domain configuration</li>
+            <li data-es="Despliegue en GitHub Pages">GitHub Pages deployment</li>
+            <li data-es="Implementación de SEO">SEO implementation</li>
+            <li data-es="Analítica web">Web analytics</li>
+            <li data-es="Presencia digital">Digital presence</li>
+            <li data-es="Desarrollo asistido por IA">AI-assisted development</li>
           </ul>
           <div class="entry-links">
-            <a href="https://refrigeracionwas.com/" target="_blank" rel="noopener">Website: refrigeracionwas.com ↗</a>
+            <a href="https://refrigeracionwas.com/" target="_blank" rel="noopener" data-es="Sitio web: refrigeracionwas.com ↗">Website: refrigeracionwas.com ↗</a>
             <a href="https://github.com/codex2856/Refrigeracion" target="_blank" rel="noopener">GitHub: codex2856/Refrigeracion ↗</a>
           </div>
         </article>
@@ -211,15 +212,15 @@
           <div class="entry-head">
             <div>
               <h3 class="entry-title">Barbería</h3>
-              <p class="entry-subtitle">Web Development Project</p>
+              <p class="entry-subtitle" data-es="Proyecto de Desarrollo Web">Web Development Project</p>
             </div>
-            <span class="entry-date">2026&ndash;Present</span>
+            <span class="entry-date" data-es="2026&ndash;Presente">2026&ndash;Present</span>
           </div>
-          <p class="entry-desc">Currently developing a modern responsive website as a portfolio project.</p>
+          <p class="entry-desc" data-es="Actualmente desarrollando un sitio web moderno y responsivo como proyecto de portafolio.">Currently developing a modern responsive website as a portfolio project.</p>
           <ul class="entry-list">
-            <li>Frontend development</li>
-            <li>Responsive design</li>
-            <li>Git and GitHub</li>
+            <li data-es="Desarrollo frontend">Frontend development</li>
+            <li data-es="Diseño responsivo">Responsive design</li>
+            <li data-es="Git y GitHub">Git and GitHub</li>
           </ul>
           <div class="entry-links">
             <a href="https://github.com/codex2856/barberia" target="_blank" rel="noopener">GitHub: codex2856/barberia ↗</a>
@@ -230,15 +231,15 @@
           <div class="entry-head">
             <div>
               <h3 class="entry-title">Odontología</h3>
-              <p class="entry-subtitle">Web Development Project</p>
+              <p class="entry-subtitle" data-es="Proyecto de Desarrollo Web">Web Development Project</p>
             </div>
-            <span class="entry-date">2026&ndash;Present</span>
+            <span class="entry-date" data-es="2026&ndash;Presente">2026&ndash;Present</span>
           </div>
-          <p class="entry-desc">Currently developing a landing page for a Cariology professional focused on presenting and promoting a professional Cariology course.</p>
+          <p class="entry-desc" data-es="Actualmente desarrollando una landing page para un profesional de Cariología enfocada en presentar y promocionar un curso profesional de Cariología.">Currently developing a landing page for a Cariology professional focused on presenting and promoting a professional Cariology course.</p>
           <ul class="entry-list">
-            <li>Responsive web design</li>
-            <li>Modern frontend development</li>
-            <li>Landing page development</li>
+            <li data-es="Diseño web responsivo">Responsive web design</li>
+            <li data-es="Desarrollo frontend moderno">Modern frontend development</li>
+            <li data-es="Desarrollo de landing page">Landing page development</li>
           </ul>
           <div class="entry-links">
             <a href="https://github.com/codex2856/Odontologia" target="_blank" rel="noopener">GitHub: codex2856/Odontologia ↗</a>
@@ -253,25 +254,25 @@
   <section class="block reveal" id="education">
     <div class="container section">
       <div class="section-label">
-        <span class="eyebrow">/ EDUCATION</span>
+        <span class="eyebrow" data-es="/ EDUCACIÓN">/ EDUCATION</span>
       </div>
       <div class="section-body">
 
         <article class="entry">
           <div class="entry-head">
             <div>
-              <h3 class="entry-title">Master's in Full Stack Web Development</h3>
+              <h3 class="entry-title" data-es="Maestría en Desarrollo Web Full Stack">Master's in Full Stack Web Development</h3>
               <p class="entry-subtitle">Conquer Blocks</p>
             </div>
-            <span class="entry-date">2026&ndash;Present</span>
+            <span class="entry-date" data-es="2026&ndash;Presente">2026&ndash;Present</span>
           </div>
-          <p class="entry-desc">Training in programming, frontend and backend development, databases, Git and GitHub, Linux, artificial intelligence, automation and deployment.</p>
+          <p class="entry-desc" data-es="Formación en programación, desarrollo frontend y backend, bases de datos, Git y GitHub, Linux, inteligencia artificial, automatización y despliegue.">Training in programming, frontend and backend development, databases, Git and GitHub, Linux, artificial intelligence, automation and deployment.</p>
         </article>
 
         <article class="entry">
           <div class="entry-head">
             <div>
-              <h3 class="entry-title">High School Diploma</h3>
+              <h3 class="entry-title" data-es="Bachillerato">High School Diploma</h3>
               <p class="entry-subtitle">Agustiniano Cristo Rey · Caracas, Venezuela</p>
             </div>
             <span class="entry-date">2016</span>
@@ -287,23 +288,23 @@
     <div class="container extra-grid">
       <div class="section two-col">
         <div class="section-label">
-          <span class="eyebrow">/ LANGUAGES</span>
+          <span class="eyebrow" data-es="/ IDIOMAS">/ LANGUAGES</span>
         </div>
         <div class="section-body">
           <ul class="plain-list">
-            <li><span>Spanish</span><span class="dim">Native</span></li>
-            <li><span>English</span><span class="dim">B2</span></li>
+            <li><span data-es="Español">Spanish</span><span class="dim" data-es="Nativo">Native</span></li>
+            <li><span data-es="Inglés">English</span><span class="dim">B2</span></li>
           </ul>
         </div>
       </div>
       <div class="section two-col">
         <div class="section-label">
-          <span class="eyebrow">/ CERTIFICATIONS</span>
+          <span class="eyebrow" data-es="/ CERTIFICACIONES">/ CERTIFICATIONS</span>
         </div>
         <div class="section-body">
           <ul class="plain-list">
-            <li><span>Reachtruck License</span></li>
-            <li><span>Driver's License</span></li>
+            <li><span data-es="Licencia de Reachtruck">Reachtruck License</span></li>
+            <li><span data-es="Licencia de Conducir">Driver's License</span></li>
           </ul>
         </div>
       </div>
@@ -314,68 +315,68 @@
   <section class="block reveal" id="experience">
     <div class="container section">
       <div class="section-label">
-        <span class="eyebrow">/ PROFESSIONAL EXPERIENCE</span>
+        <span class="eyebrow" data-es="/ EXPERIENCIA PROFESIONAL">/ PROFESSIONAL EXPERIENCE</span>
       </div>
       <div class="section-body">
 
         <article class="entry">
           <div class="entry-head">
             <div>
-              <h3 class="entry-title">Order Picker / Reachtruck Operator</h3>
-              <p class="entry-subtitle">Bunzl &middot; Netherlands</p>
+              <h3 class="entry-title" data-es="Preparador de Pedidos / Operador de Reachtruck">Order Picker / Reachtruck Operator</h3>
+              <p class="entry-subtitle" data-es="Bunzl &middot; Países Bajos">Bunzl &middot; Netherlands</p>
             </div>
-            <span class="entry-date">2024&ndash;Present</span>
+            <span class="entry-date" data-es="2024&ndash;Presente">2024&ndash;Present</span>
           </div>
           <ul class="entry-list">
-            <li>Pick and prepare customer orders</li>
-            <li>Operate reachtruck</li>
-            <li>Process completed orders in the warehouse management system</li>
-            <li>Mark orders as ready for shipment</li>
-            <li>Determine the correct truck according to destination</li>
-            <li>Load orders into the correct truck</li>
-            <li>Verify destination and assigned truck</li>
-            <li>Confirm and close orders in the system</li>
-            <li>Work accurately in a fast-paced logistics environment</li>
+            <li data-es="Preparar y alistar pedidos de clientes">Pick and prepare customer orders</li>
+            <li data-es="Operar reachtruck">Operate reachtruck</li>
+            <li data-es="Procesar pedidos completados en el sistema de gestión de almacén">Process completed orders in the warehouse management system</li>
+            <li data-es="Marcar pedidos como listos para envío">Mark orders as ready for shipment</li>
+            <li data-es="Determinar el camión correcto según el destino">Determine the correct truck according to destination</li>
+            <li data-es="Cargar los pedidos en el camión correcto">Load orders into the correct truck</li>
+            <li data-es="Verificar destino y camión asignado">Verify destination and assigned truck</li>
+            <li data-es="Confirmar y cerrar pedidos en el sistema">Confirm and close orders in the system</li>
+            <li data-es="Trabajar con precisión en un entorno logístico de ritmo acelerado">Work accurately in a fast-paced logistics environment</li>
           </ul>
         </article>
 
         <article class="entry">
           <div class="entry-head">
             <div>
-              <h3 class="entry-title">Sorting Line Operator &amp; Warehouse Associate</h3>
-              <p class="entry-subtitle">SodaStream &middot; Tilburg, Netherlands</p>
+              <h3 class="entry-title" data-es="Operador de Línea de Clasificación y Auxiliar de Almacén">Sorting Line Operator &amp; Warehouse Associate</h3>
+              <p class="entry-subtitle" data-es="SodaStream &middot; Tilburg, Países Bajos">SodaStream &middot; Tilburg, Netherlands</p>
             </div>
             <span class="entry-date">2023&ndash;2024</span>
           </div>
           <ul class="entry-list">
-            <li>Managed inventory and quality control on sorting line</li>
-            <li>Operated input and output areas</li>
-            <li>Handled special product processing</li>
-            <li>Communicated with Team Leader</li>
-            <li>Worked as Buddy Trainer, helping onboard and train new employees</li>
+            <li data-es="Gestión de inventario y control de calidad en la línea de clasificación">Managed inventory and quality control on sorting line</li>
+            <li data-es="Operación de áreas de entrada y salida">Operated input and output areas</li>
+            <li data-es="Manejo de procesamiento especial de productos">Handled special product processing</li>
+            <li data-es="Comunicación con el Líder de Equipo">Communicated with Team Leader</li>
+            <li data-es="Trabajé como Buddy Trainer, ayudando en la incorporación y capacitación de nuevos empleados">Worked as Buddy Trainer, helping onboard and train new employees</li>
           </ul>
         </article>
 
         <article class="entry">
           <div class="entry-head">
             <div>
-              <h3 class="entry-title">Customer Service</h3>
-              <p class="entry-subtitle">Hamburguesería Atlántida / Bar Bambú &middot; Tenerife, Spain</p>
+              <h3 class="entry-title" data-es="Atención al Cliente">Customer Service</h3>
+              <p class="entry-subtitle" data-es="Hamburguesería Atlántida / Bar Bambú &middot; Tenerife, España">Hamburguesería Atlántida / Bar Bambú &middot; Tenerife, Spain</p>
             </div>
             <span class="entry-date">2017&ndash;2022</span>
           </div>
-          <p class="entry-desc">Customer service, orders, cash handling, stock management and working efficiently under pressure.</p>
+          <p class="entry-desc" data-es="Atención al cliente, toma de pedidos, manejo de caja, control de stock y trabajo eficiente bajo presión.">Customer service, orders, cash handling, stock management and working efficiently under pressure.</p>
         </article>
 
         <article class="entry">
           <div class="entry-head">
             <div>
-              <h3 class="entry-title">Customer Service</h3>
-              <p class="entry-subtitle">Intercafé La Guaira &middot; Tenerife, Spain</p>
+              <h3 class="entry-title" data-es="Atención al Cliente">Customer Service</h3>
+              <p class="entry-subtitle" data-es="Intercafé La Guaira &middot; Tenerife, España">Intercafé La Guaira &middot; Tenerife, Spain</p>
             </div>
             <span class="entry-date">2018</span>
           </div>
-          <p class="entry-desc">Customer service, money transfers, mobile top-ups, photocopying and printing services.</p>
+          <p class="entry-desc" data-es="Atención al cliente, transferencias de dinero, recargas móviles, fotocopiado e impresión.">Customer service, money transfers, mobile top-ups, photocopying and printing services.</p>
         </article>
 
       </div>
@@ -384,7 +385,7 @@
 
   <footer class="footer no-print">
     <div class="container footer-inner">
-      <p>Wilfredo Salazar &middot; Netherlands</p>
+      <p data-es="Wilfredo Salazar &middot; Países Bajos">Wilfredo Salazar &middot; Netherlands</p>
       <div class="footer-links">
         <a href="https://github.com/codex2856" target="_blank" rel="noopener">GitHub</a>
         <a href="https://linkedin.com/in/wilfredo-salazar-dev" target="_blank" rel="noopener">LinkedIn</a>
