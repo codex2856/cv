@@ -1,4 +1,4 @@
-// Entrance animations on scroll + PDF download via browser print
+// Scroll-reveal animations, mobile nav toggle, PDF download via browser print
 
 (function () {
   const revealEls = document.querySelectorAll(".reveal");
@@ -24,5 +24,25 @@
   const downloadBtn = document.getElementById("downloadBtn");
   if (downloadBtn) {
     downloadBtn.addEventListener("click", () => window.print());
+  }
+
+  const nav = document.getElementById("nav");
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  if (nav && navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("is-open");
+      navToggle.classList.toggle("is-open", isOpen);
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.addEventListener("click", (e) => {
+      if (e.target.tagName === "A") {
+        nav.classList.remove("is-open");
+        navToggle.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
   }
 })();
