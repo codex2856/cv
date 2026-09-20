@@ -21,11 +21,6 @@
     revealEls.forEach((el) => el.classList.add("is-visible"));
   }
 
-  const downloadBtn = document.getElementById("downloadBtn");
-  if (downloadBtn) {
-    downloadBtn.addEventListener("click", () => window.print());
-  }
-
   const nav = document.getElementById("nav");
   const navToggle = document.getElementById("navToggle");
   const navLinks = document.getElementById("navLinks");
