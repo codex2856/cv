@@ -3,16 +3,16 @@
    ============================================================ */
 
 :root {
-  --navy: #0a1128;
-  --navy-2: #0e1730;
-  --navy-3: #131e3d;
+  --navy: #1c2f6e;
+  --navy-2: #24398a;
+  --navy-3: #2d47a0;
   --blue: #3d7dfa;
-  --blue-bright: #5b93ff;
-  --ink: #eef2fb;
-  --ink-muted: #9aa7c4;
-  --ink-dim: #6d7997;
-  --line: rgba(255, 255, 255, 0.09);
-  --line-strong: rgba(255, 255, 255, 0.16);
+  --blue-bright: #7db0ff;
+  --ink: #ffffff;
+  --ink-muted: #c4d0f0;
+  --ink-dim: #97a6d9;
+  --line: rgba(255, 255, 255, 0.14);
+  --line-strong: rgba(255, 255, 255, 0.22);
   --radius: 12px;
 
   /* hero light-theme tokens */
