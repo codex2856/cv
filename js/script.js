@@ -1,7 +1,7 @@
 // Scroll-reveal animations, mobile nav toggle, PDF download via browser print
 
 (function () {
-  const revealEls = document.querySelectorAll(".reveal");
+  const revealEls = document.querySelectorAll(".reveal, .reveal-item");
 
   if ("IntersectionObserver" in window && revealEls.length) {
     const observer = new IntersectionObserver(
