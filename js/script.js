@@ -47,6 +47,7 @@
     const STORAGE_KEY = "cv-lang";
     const textEls = document.querySelectorAll("[data-es]:not([data-i18n-html])");
     const htmlEls = document.querySelectorAll("[data-es][data-i18n-html]");
+    const downloadBtn = document.getElementById("downloadBtn");
 
     textEls.forEach((el) => { el.dataset.en = el.textContent; });
     htmlEls.forEach((el) => { el.dataset.enHtml = el.innerHTML; });
@@ -61,6 +62,10 @@
       document.documentElement.lang = lang;
       langToggle.textContent = lang === "es" ? "EN" : "ES";
       langToggle.setAttribute("aria-label", lang === "es" ? "Switch to English" : "Cambiar a español");
+      if (downloadBtn) {
+        downloadBtn.href = lang === "es" ? downloadBtn.dataset.hrefEs : downloadBtn.dataset.hrefEn;
+        downloadBtn.setAttribute("download", lang === "es" ? downloadBtn.dataset.fileEs : downloadBtn.dataset.fileEn);
+      }
       try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
     }
 
