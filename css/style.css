@@ -551,6 +551,23 @@ img { max-width: 100%; display: block; }
   border-top: 1px dashed var(--line);
 }
 
+.entry-shot {
+  width: 100%;
+  aspect-ratio: 16 / 9.2;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  margin-bottom: 18px;
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.entry:hover .entry-shot {
+  transform: translateY(-3px);
+  border-color: var(--line-strong);
+}
+
 .entry-head {
   display: flex;
   justify-content: space-between;
